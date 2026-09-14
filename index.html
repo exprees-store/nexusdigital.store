@@ -189,6 +189,18 @@
             position: relative;
             overflow: hidden;
             border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* هذا التنسيق يضمن ظهور جميع الصور بشكل متناسق وممتاز داخل الحاويات */
+        .product-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            display: block;
         }
 
         .product-content {
@@ -287,7 +299,7 @@
             <div class="product-card">
                 <span class="product-badge">Bestseller</span>
                 <div class="product-image-container">
-                    <img src="cover.png" alt="AI Freelance Toolkit" style="object-fit: contain; width: 100%; height: 100%; background-color: #0b0f19;">
+                    <img src="cover.png" alt="AI Freelance Toolkit">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">AI Freelance & Client-Hunting Suite</h3>
@@ -303,7 +315,7 @@
             <div class="product-card">
                 <span class="product-badge">Flagship Masterclass</span>
                 <div class="product-image-container">
-                    <img src="book-cover.jpg" alt="The Ultimate AI Digital Business Masterclass" style="object-fit: contain; width: 100%; height: 100%; background-color: #0b0f19;">
+                    <img src="book-cover.jpg" alt="The Ultimate AI Digital Business Masterclass">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">The Ultimate AI Digital Business Masterclass</h3>
