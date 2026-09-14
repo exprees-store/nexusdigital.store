@@ -191,19 +191,6 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        .product-image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .product-card:hover .product-image-container img {
-            transform: scale(1.03);
-        }
-
         .product-content {
             padding: 1.4rem;
             display: flex;
@@ -300,7 +287,7 @@
             <div class="product-card">
                 <span class="product-badge">Bestseller</span>
                 <div class="product-image-container">
-                    <img src="cover.png" alt="AI Freelance Toolkit">
+                    <img src="cover.png" alt="AI Freelance Toolkit" style="object-fit: contain; width: 100%; height: 100%; background-color: #0b0f19;">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">AI Freelance & Client-Hunting Suite</h3>
