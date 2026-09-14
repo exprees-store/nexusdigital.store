@@ -192,12 +192,11 @@
         }
 
         .product-image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* لتظهر الصورة بالكامل داخل الحاوية دون قص */
-    background-color: #0b0f19; /* لون خلفية متناسق إذا كان هناك فراغ جانبي */
-    display: block;
-}
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             transition: transform 0.5s ease;
         }
 
@@ -238,7 +237,6 @@
         }
 
         .price {
-            postition: relative;
             font-size: 1.25rem;
             font-weight: 800;
             color: #ffffff;
@@ -318,7 +316,7 @@
             <div class="product-card">
                 <span class="product-badge">Flagship Masterclass</span>
                 <div class="product-image-container">
-                    <img src="book-cover.png" alt="The Ultimate AI Digital Business Masterclass">
+                    <img src="book-cover.jpg" alt="The Ultimate AI Digital Business Masterclass" style="object-fit: contain; width: 100%; height: 100%; background-color: #0b0f19;">
                 </div>
                 <div class="product-content">
                     <h3 class="product-title">The Ultimate AI Digital Business Masterclass</h3>
